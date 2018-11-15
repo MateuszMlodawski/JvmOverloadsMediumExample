@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/right_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/default_activity_vertical_margin" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/default_activity_vertical_margin" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/default_activity_horizontal_margin" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/default_activity_horizontal_margin" />
+
+    <com.mmlodawski.jvmoverloadsmediumexample.widget.checkbox.CheckBoxConstructors
+        android:id="@+id/buttons"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:text="@string/three_constructors"
+        app:layout_constraintBottom_toTopOf="@+id/textInputEditTexts"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toRightOf="@id/right_guideline"
+        app:layout_constraintTop_toTopOf="@id/top_guideline"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.mmlodawski.jvmoverloadsmediumexample.widget.checkbox.CheckBoxJvm
+        android:id="@+id/textInputEditTexts"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_widget_vertical_margin"
+        android:text="@string/jvmoverloads"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxes"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toRightOf="@id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@id/buttons" />
+
+    <com.mmlodawski.jvmoverloadsmediumexample.widget.checkbox.CheckBoxJvmStyled
+        android:id="@+id/checkBoxes"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_widget_vertical_margin"
+        android:text="@string/defstyleattr_set"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_guideline"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toRightOf="@id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@id/textInputEditTexts" />
+
+</android.support.constraint.ConstraintLayout>

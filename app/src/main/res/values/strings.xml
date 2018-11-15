@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- General -->
+    <string name="app_name">JvmOverloadsMediumExample</string>
+
+    <string name="three_constructors">Three constructors</string>
+    <string name="jvmoverloads">\@JvmOverloads</string>
+    <string name="defstyleattr_set">defStyleAttr set</string>
+
+    <!-- Main Activity -->
+    <string name="buttons">Buttons</string>
+    <string name="text_input_edit_texts">Text Input Edit Texts</string>
+    <string name="check_boxes">Check Boxes</string>
+
+    <!-- Buttons -->
+    <string name="buttons_title">Buttons</string>
+
+    <!-- TextInputEditTexts-->
+    <string name="text_input_edit_texts_title">TextInputEditTexts</string>
+
+    <!-- CheckBoxes-->
+    <string name="check_boxes_activity">CheckBoxes</string>
+
+</resources>
